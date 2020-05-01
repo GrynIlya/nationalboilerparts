@@ -1,0 +1,57 @@
+.execphpwidget{
+  display:none;
+}
+
+.chosen-container{
+  width: 260px!important;
+  min-width: 120px;
+  margin:10px 5px ;
+}
+.letterContainer{
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  height: 100px;
+  align-items: center;
+}
+
+.alphabet-letter{
+  display: flex;
+  background: white;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockCityList{
+  box-sizing:border-box;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  background-color: #1b1f43;
+  margin: auto;
+  overflow: auto;
+  margin-bottom: 100px;
+  max-height: 500px;
+}
+
+.blockCityList-cell{
+  max-height: 25px;
+  text-align: center;
+  margin: 5px;
+  color: white;
+}
+
+.blockCityList-noResults{
+  text-align: center;
+  width: 400%;
+  color: white;
+}
+
+@media handheld, (max-width: 900px){
+  .blockCityList{grid-template-columns:100%;}
+  .letterContainer{width: 100%;flex-wrap: wrap;}
+  .alphabet-letter{width: 20px;height: 20px;}
+  .blockCityList-noResults{width:100%;}
+}
